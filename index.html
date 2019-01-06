@@ -1,0 +1,69 @@
+<DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>GifTastic | TV Shows</title>
+    
+    <!-- CSS FILE -->
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    
+    <!-- BOOTSTRAP CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Black|Lato|Roboto|Rubik" rel="stylesheet">
+
+</head>
+<body>
+
+    <!-- JUMBROTRON HEADER -->
+    <div class="jumbotron" id="header">
+        <h1><strong>GifTastic</strong></h1>
+        <h6>Search your favorite TV show GIF's</h6>
+    </div>
+    <!-- INPUT FORM  -->
+    <form class="form-inline" id="showSearch">
+        <div class="form-group">
+            <label for="tvshowInput">Search for a TV Show:</label>
+            <input type="text" id="showInput">
+        </div>
+                  
+        <!-- BUTTON WILL ADD SHOW TO LIST -->
+        <input id="addShow" type="submit" value="Submit" class="btn btn-primary">
+    </form>
+        
+        <!-- TV SHOW BUTTONS -->
+        <div class="row">
+            <div class="container">
+                <div class="btn-group inline pull-center">
+                    <button class="btn btn-primary" id="show" data-search="Parks and Recreation">Parks and Recreation</button>
+                    <button class="btn btn-primary" id="show" data-search="Broad City">Broad City</button>
+                    <button class="btn btn-primary" id="show" data-search="Arrested Development">Arrested Development</button>
+                    <button class="btn btn-primary" id="show" data-search="Kroll Show">Kroll Show</button>
+                
+                    <div id="newButton"></div>
+                </div>
+            </div> 
+        </div> 
+                
+        <!-- GENERATED GIF AREA -->
+        <div class="row">
+            <div class="container-fluid">
+                <span><div id="gifArea"></div></span>
+            </div> 
+        </div>
+
+    <!-- jQUERY CDN -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- JAVASCRIPT FILE -->
+    <script type="text/javascript" src="./assets/javascript/app.js"></script>
+
+</div>
+</body>
+</html>
